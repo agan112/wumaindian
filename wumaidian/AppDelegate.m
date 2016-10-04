@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "WumaindianManager.h"
+#import "UIViewController+wumaidian.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +19,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    if ([WumaindianManager hasWumainDian]) {
+        //hook viewDidAppear to register wumaindian 
+        [UIViewController registerWumaidian];
+    }
+    
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[ViewController new]];
+    self.window.rootViewController = nav;
     return YES;
 }
 

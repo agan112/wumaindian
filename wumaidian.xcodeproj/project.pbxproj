@@ -15,6 +15,8 @@
 		8E694A4B1DA23DC100EFE88F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E694A491DA23DC100EFE88F /* LaunchScreen.storyboard */; };
 		8E694A561DA23DC100EFE88F /* wumaidianTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E694A551DA23DC100EFE88F /* wumaidianTests.m */; };
 		8E694A611DA23DC100EFE88F /* wumaidianUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E694A601DA23DC100EFE88F /* wumaidianUITests.m */; };
+		8E694A7A1DA2795800EFE88F /* WumaindianManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E694A791DA2795800EFE88F /* WumaindianManager.m */; };
+		8E694A801DA28B1800EFE88F /* UIViewController+wumaidian.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E694A7F1DA28B1800EFE88F /* UIViewController+wumaidian.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		8E694A5C1DA23DC100EFE88F /* wumaidianUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wumaidianUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E694A601DA23DC100EFE88F /* wumaidianUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wumaidianUITests.m; sourceTree = "<group>"; };
 		8E694A621DA23DC100EFE88F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E694A781DA2795800EFE88F /* WumaindianManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WumaindianManager.h; sourceTree = "<group>"; };
+		8E694A791DA2795800EFE88F /* WumaindianManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WumaindianManager.m; sourceTree = "<group>"; };
+		8E694A7E1DA28B1800EFE88F /* UIViewController+wumaidian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+wumaidian.h"; sourceTree = "<group>"; };
+		8E694A7F1DA28B1800EFE88F /* UIViewController+wumaidian.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+wumaidian.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,10 @@
 				8E694A491DA23DC100EFE88F /* LaunchScreen.storyboard */,
 				8E694A4C1DA23DC100EFE88F /* Info.plist */,
 				8E694A3B1DA23DC100EFE88F /* Supporting Files */,
+				8E694A781DA2795800EFE88F /* WumaindianManager.h */,
+				8E694A791DA2795800EFE88F /* WumaindianManager.m */,
+				8E694A7E1DA28B1800EFE88F /* UIViewController+wumaidian.h */,
+				8E694A7F1DA28B1800EFE88F /* UIViewController+wumaidian.m */,
 			);
 			path = wumaidian;
 			sourceTree = "<group>";
@@ -273,9 +283,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E694A801DA28B1800EFE88F /* UIViewController+wumaidian.m in Sources */,
 				8E694A431DA23DC100EFE88F /* ViewController.m in Sources */,
 				8E694A401DA23DC100EFE88F /* AppDelegate.m in Sources */,
 				8E694A3D1DA23DC100EFE88F /* main.m in Sources */,
+				8E694A7A1DA2795800EFE88F /* WumaindianManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +519,7 @@
 				8E694A671DA23DC100EFE88F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8E694A681DA23DC100EFE88F /* Build configuration list for PBXNativeTarget "wumaidianTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +528,7 @@
 				8E694A6A1DA23DC100EFE88F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8E694A6B1DA23DC100EFE88F /* Build configuration list for PBXNativeTarget "wumaidianUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +537,7 @@
 				8E694A6D1DA23DC100EFE88F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
