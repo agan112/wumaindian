@@ -71,6 +71,8 @@
         NSString *parameter = [[WumaindianManager shareInstance].wumaindianDic objectForKey:viewID];
         NSLog(@"");
         NSLog(@"无埋点注册成功，点击的viewID是:%@",viewID);
+        UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"点击成功" message:[NSString stringWithFormat:@"无埋点注册成功，点击的viewID是:%@",viewID] delegate:nil cancelButtonTitle:nil otherButtonTitles:@"👌", nil];
+        [alertView show];
     }
 }
 
